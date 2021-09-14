@@ -2,10 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    
+    line-height: 2rem;
     box-sizing: border-box;
     font-family: 'Roboto';
+    padding: 0px;
+    margin: 0px;
 }
-body {
+html {
     background-color: rgb(192, 192, 192);
+}
+h1 {
+    text-align: center;
+}
+#linkwrapper {
+    list-style: none;
+    width: 700px;
+    margin: auto;
+    font-size: 20px;
+    background-color: rgb(136, 136, 136);
+}
+a {
+    color: white;
+}
+.linkli {
+    color: white;
+    margin: 10px;
+    background-color: red;
 }
