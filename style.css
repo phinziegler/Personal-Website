@@ -86,7 +86,7 @@ h1 {
 }
 #linkwrapper {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     /* grid-template-rows */
     list-style: none;
     width: 1200px;
