@@ -51,6 +51,7 @@ html {
     background-color: rgba(0, 0, 0, 0.322);
     margin-bottom: 15px;
     width: 500px;
+    max-width: 100%;
     left: 50%;
     transform: translate(-50%);
     border-radius: 0px 0px 20px 20px;
@@ -90,7 +91,7 @@ h1 {
     /* grid-template-rows */
     list-style: none;
     width: 1200px;
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
     font-size: 20px;
     /* background-color: rgb(136, 136, 136); */
@@ -152,7 +153,7 @@ li>a>img {
     transform: translate(475px);
 }
 #aboutContent {
-    /* padding: 20px; */
+    padding-bottom: 20px;
     font-size: 1.5rem;
     width: 80%;
     margin: auto;
@@ -173,4 +174,28 @@ li>a>img {
 }
 #aboutContent>p>a {
     color:rgb(182, 94, 59)
+}
+
+@media only screen and (max-width: 800px) {
+    #linkwrapper {
+        grid-template-columns: 1fr;
+        /* background-color: red; */
+    }
+    #about {
+        margin-top: 20px;
+        position: relative;
+        height: auto;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        border-top: 2px solid var(--orange);
+        border-right: none;
+        box-shadow: none;
+        background-color: rgb(41, 83, 107);
+        color:white;
+        transition: none;
+    }
+    #about:hover {
+        transform: none;
+    }
 }
