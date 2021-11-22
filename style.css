@@ -153,6 +153,8 @@ li>a>img {
     background-color: rgba(55, 68, 88, 0.5);
     background-image: linear-gradient(to bottom left, rgba(44, 52, 63, 1), rgb(20, 33, 49));
     overflow-x: visible;
+    /* overflow-y: scroll; */
+
     transition: transform .4s;
 }
 #about:hover {
@@ -199,6 +201,16 @@ li>a>img {
     margin-left: 30px;
 }
 
+#copyright {
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.452);
+    background-color: rgba(128, 128, 128, 0.205);
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+
 @media only screen and (max-width: 800px) {
     #linkwrapper {
         grid-template-columns: 1fr;
@@ -220,6 +232,18 @@ li>a>img {
     }
     #about:hover {
         transform: none;
+    }
+    #aboutIndicator {
+        display:none;
+    }
+    #copyright {
+        margin: auto;
+        font-size: 1rem;
+        text-align: center;
+        color: rgb(151, 151, 151);
+        background-color: rgb(14, 30, 47);
+        width: 100%;
+        border-radius: 0px;
     }
     .linkli {
         font-size: 1rem;
