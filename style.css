@@ -171,3 +171,6 @@ li>a>img {
     margin: 40px;
     text-align: center;
 }
+#aboutContent>p>a {
+    color:rgb(182, 94, 59)
+}
