@@ -97,7 +97,7 @@ h1 {
     /* background-color: rgb(136, 136, 136); */
     justify-content: center;
     align-items: center;
-
+    padding-bottom: 40px;
 }
 a,a:active {
     color:inherit;
@@ -121,7 +121,7 @@ li {
 li:hover {
     border: 6px solid rgb(165, 84, 52);
     color: rgb(255, 255, 255);
-    transform: scale(1.01);
+    transform: scale(1.02);
     background-color: rgb(224, 114, 70);
 }
 li>a>p {
@@ -173,7 +173,10 @@ li>a>img {
     text-align: center;
 }
 #aboutContent>p>a {
-    color:rgb(182, 94, 59)
+    color:rgb(223, 117, 76);
+}
+#aboutContent>p>a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 800px) {
