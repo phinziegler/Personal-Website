@@ -152,11 +152,18 @@ li>a>img {
     box-shadow:rgb(165, 84, 52) 6px 0px 0px;
     background-color: rgba(55, 68, 88, 0.5);
     background-image: linear-gradient(to bottom left, rgba(44, 52, 63, 1), rgb(20, 33, 49));
-    overflow: hidden;
+    overflow-x: visible;
     transition: transform .4s;
 }
 #about:hover {
     transform: translate(475px);
+}
+#aboutIndicator {
+    color: rgb(23, 55, 73);
+    font-size: 23px;
+    position: absolute;
+    right: -23px;
+    top: 20px;
 }
 #aboutContent {
     padding-bottom: 20px;
