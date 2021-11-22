@@ -201,4 +201,13 @@ li>a>img {
     #about:hover {
         transform: none;
     }
+    .linkli {
+        font-size: 1rem;
+    }
+    li {
+        padding: 0px 10px 10px 10px;
+    }
+    li>a>p {
+        margin: 0px;
+    }
 }
