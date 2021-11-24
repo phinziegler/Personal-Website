@@ -148,8 +148,8 @@ li>a>img {
     text-align: left;
     display:block;
     bottom: 0px;
-    height: 100px;
-    overflow: auto;
+    /* height: 100px; */
+    /* overflow: auto; */
     left: 0px;
     margin: auto;
     font-size: 1.2rem;
@@ -164,11 +164,7 @@ li>a>img {
     border-radius: 0 0px 20px 20px;
 }
 .visibleDescription {
-    opacity: 100%;
-}
-.description:hover {
-    background-color: rgba(224, 113, 70, 1);
-
+    opacity: 75%;
 }
 #about {
     color: white;
