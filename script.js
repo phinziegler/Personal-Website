@@ -8,6 +8,11 @@ linklist.forEach(liElement => {
         let description = liElement.querySelector(".description");
         toggleOff(description);
     });
+    liElement.addEventListener("click", (e) => {
+        // e.preventDefault();
+        let link = liElement.children[0].getAttribute("href");
+        window.open(link);
+    });
 });
 
 function toggleOff(description) {
