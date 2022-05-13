@@ -1,16 +1,23 @@
 const linklist = Array.from(document.querySelectorAll(".linkli"));
-console.log(linklist.length)
 linklist.forEach(liElement => {
     liElement.addEventListener("mouseenter", (e) => {
         let description = liElement.querySelector(".description");
-        toggle(description);
+        toggleOn(description);
     });
     liElement.addEventListener("mouseleave", (e) => {
         let description = liElement.querySelector(".description");
-        toggle(description);
+        toggleOff(description);
     });
 });
 
-function toggle(description) {
-    description.classList.toggle("visibleDescription");
+function toggleOff(description) {
+    if(description.classList.contains("visibleDescription")) {
+        description.classList.toggle("visibleDescription");
+    }
+}
+
+function toggleOn(description) {
+    if(!description.classList.contains("visibleDescription")) {
+        description.classList.toggle("visibleDescription");
+    }
 }
