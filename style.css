@@ -120,6 +120,11 @@ li {
     background-color: rgb(104, 104, 104);
     border-radius: 20px;
     text-align: center;
+    cursor:pointer;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.34); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.34);
+
     transform: scale(1);
     transition: color .25s, transform .25s, background-color .25s, border .25s;
 }
@@ -135,12 +140,16 @@ li>a>p {
 li>a>img {
     pointer-events: none;
     border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.178);
     display: block;
     /* height: calc(100% - 4rem); */
     max-height: 400px;
     width: 100%;
+    margin:auto;
     max-width: 600px;
     object-fit: cover;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.34); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.34);
 }
 .description {
     opacity: 0%;
@@ -148,24 +157,35 @@ li>a>img {
     transition: opacity .25s;
     text-align: left;
     display:block;
-    bottom: 0px;
+    bottom: 12px;
+    /* border: 2px solid orange; */
     /* height: 100px; */
     /* overflow: auto; */
-    left: 0px;
+    left: 12px;
     margin: auto;
     font-size: 1.2rem;
-    width: 100%;
-    padding: 20px;
+    width: calc(100% - 24px);
+    padding:10px;
+    /* margin-left: 20px; */
     /* width: 300px; */
     background-color: rgba(224, 113, 70, 1);
+
+    /* -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.34); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.34); */
+
     /* background-color: inherit; */
     
     /* background-color: rgba(224, 80, 70, 0.747); */
     
-    border-radius: 0 0px 20px 20px;
+    border-radius: 0 0px 7px 7px;
 }
 .visibleDescription {
-    opacity: 75%;
+    opacity: 85%;
+}
+.subtleText {
+    line-height: 1rem;
+    font-size: 1rem;
+    opacity: 20%;
 }
 #about {
     color: white;
@@ -179,9 +199,12 @@ li>a>img {
     background-color: rgba(55, 68, 88, 0.5);
     background-image: linear-gradient(to bottom left, rgba(44, 52, 63, 1), rgb(20, 33, 49));
     overflow-x: visible;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
     /* overflow-y: scroll; */
 
-    transition: transform .4s;
+    transition: transform .25s;
 }
 #about:hover {
     transform: translate(475px);
@@ -201,9 +224,9 @@ li>a>img {
     /* background-color: red; */
 }
 .aboutText {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     text-align: start;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 #aboutContent>hr {
     border: 1px solid rgba(255, 255, 255, 0.233);
@@ -231,8 +254,8 @@ li>a>img {
     margin: auto;
     font-size: 1rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.452);
-    background-color: rgba(128, 128, 128, 0.205);
+    color: rgba(255, 255, 255, 0.247);
+    background-color: rgba(128, 128, 128, 0.116);
     width: 400px;
     border-radius: 10px 10px 0px 0px;
 }
