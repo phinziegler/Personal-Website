@@ -9,8 +9,9 @@ linklist.forEach(liElement => {
         toggleOff(description);
     });
     liElement.addEventListener("click", (e) => {
-        // e.preventDefault();
-        let link = liElement.children[0].getAttribute("href");
+        e.preventDefault();
+        e.stopPropagation();
+        let link = liElement.querySelector("a").getAttribute("href");
         window.open(link);
     });
 });
